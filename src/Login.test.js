@@ -13,7 +13,7 @@ describe("Login Component Tests", () => {
 
   test("Renders the login form", () => {
     render(<Login />);
-    const usernameInput = screen.getByPlaceholderText("Username");
+    const usernameInput = screen.getByPlaceholderText(/Username/i);
     const passwordInput = screen.getByPlaceholderText("Password");
     const loginButton = screen.getByText("Login");
 
